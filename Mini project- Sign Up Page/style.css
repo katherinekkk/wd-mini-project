@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outer-box {
+    border: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, white, rgb(9, 85, 85));
+}
+
+.inner-box {
+    width: 350px;
+    /* top bottom - 0   left right - auto ,  inner-box will be at center of parent outer-box */
+    margin: 0 auto;
+
+    /* To allign vertically */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* padding: top bottom    left right */
+    padding: 20px 50px;
+    border-radius: 8px;
+    /* shadow-   right bottom blurr color */
+    box-shadow: 2px 2px 5px #1090ea;
+    /* To make our signup page on top and circles behind while changing width of screen */
+    z-index: 2;
+    /* TO show glass effect */
+    background-color: #ffffff09;
+    backdrop-filter: blurr(15px);
+}
+
+.signup-header h1 {
+    font-size: 2rem;
+    padding: 8px 0;
+    color: #065fef;
+}
+
+.signup-header p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
+    margin: 15px 0;
+}
+
+.signup-body p label {
+    font-weight: bold;
+    color: #134977;
+    display: block;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(137, 191, 191);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.signup-body p input[type="submit"] {
+    background-color: #7db5e2;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body p input[type="submit"]:hover {
+    background-color: #4794d3;
+
+}
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #4794d3;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.C1 {
+    top: 0px;
+    left: 40px;
+}
+
+.C2 {
+    bottom: 0px;
+    right: 40px;
+}
