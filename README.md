@@ -1,2 +1,2 @@
 # wd-mini-project
-Sign-up page using HTML CSS
+Simple Sign-up page using HTML and CSS
